@@ -1,18 +1,23 @@
+/* الخلفية */
 body {
   font-family: 'Arial', sans-serif;
   background: linear-gradient(to right, #ffc8dd, #bde0fe);
   display: flex;
   justify-content: center;   /* أفقي */
   align-items: center;       /* عمودي */
-  min-height: 100vh;         /* يغطي الشاشة كاملة */
+  height: 100vh;             /* يغطي الشاشة كاملة */
   margin: 0;
 }
 
+/* الكارت */
 .container {
+  background: rgba(255, 255, 255, 0.8); /* أبيض شفاف */
+  padding: 30px 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   text-align: center;
   width: 90%;
   max-width: 500px;
-  padding: 20px;
 }
 
 h1 {
@@ -27,10 +32,6 @@ img {
   width: 100%;
   max-width: 280px;
   border-radius: 20px;
-}
-
-#quiz-container {
-  margin: 0 auto;
 }
 
 .question {
