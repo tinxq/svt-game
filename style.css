@@ -3,9 +3,8 @@ body {
   font-family: 'Arial', sans-serif;
   background: linear-gradient(to right, #ffc8dd, #bde0fe);
   display: flex;
-  justify-content: center;   /* أفقي */
-  align-items: center;       /* عمودي */
-  height: 100vh;             /* يغطي الشاشة كاملة */
+  justify-content: center;  
+  align-items: center;      
   margin: 0;
 }
 
