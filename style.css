@@ -1,21 +1,27 @@
 body {
   font-family: 'Arial', sans-serif;
   background: linear-gradient(to right, #ffc8dd, #bde0fe);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* عمودي */
+  align-items: center;    /* أفقي */
+  min-height: 100vh;      /* يغطي الشاشة بالكامل */
+  margin: 0;
+  padding: 20px;
   text-align: center;
-  padding: 5vw 4vw; /* مرن مع حجم الشاشة */
 }
 
 img {
   display: block;
-  margin: 0 auto 5vw;
+  margin: 0 auto 30px;
   max-width: 90%;
-  width: 300px; /* للابتوب والكمبيوتر */
+  width: 300px;
   border-radius: 20px;
 }
 
 h1 {
   color: #7209b7;
-  font-size: clamp(1.5rem, 4vw, 2.5rem); /* يتغير مع حجم الشاشة */
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
 }
 
 .question {
@@ -34,8 +40,8 @@ h1 {
   border: none;
   border-radius: 12px;
   cursor: pointer;
-  width: 80%; /* مرن للموبايل */
-  max-width: 400px; /* ما يكبر بزيادة */
+  width: 80%;
+  max-width: 400px;
   font-size: clamp(0.9rem, 2.5vw, 1.2rem);
   transition: background-color 0.3s;
 }
@@ -48,15 +54,4 @@ h1 {
   font-size: clamp(1.2rem, 3vw, 1.8rem);
   color: #560bad;
   margin-top: 30px;
-}
-
-/* تحسين للموبايل */
-@media (max-width: 600px) {
-  body {
-    padding: 20px;
-  }
-  img {
-    width: 100%;
-    max-width: 250px;
-  }
 }
